@@ -65,29 +65,49 @@ section {
     transform: translateY(-100%) scale(0);
     transition: var(--transition-dflt);
     background-color: var(--color-primary);
+
+    &.active-sect{
+        display: block;
+        animation: scaleAnm 1s ease-in-out;
+    }
+}
+
+@keyframes scaleAnm {
+    from{
+        transform: translateY(-100%) scaleY(0);
+    }
+    
+    to{
+        transform: translateY(0) scaleY(1);
+    }
 }
 
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: aqua;
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: aquamarine;
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: yellowgreen;
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: plum;
 }
 
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: green;
 }

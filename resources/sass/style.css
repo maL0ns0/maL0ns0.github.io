@@ -70,35 +70,66 @@ section {
   transition: var(--transition-dflt);
   background-color: var(--color-primary);
 }
+.section.active-sect {
+  display: block;
+  -webkit-animation: scaleAnm 1s ease-in-out;
+          animation: scaleAnm 1s ease-in-out;
+}
 
+@-webkit-keyframes scaleAnm {
+  from {
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
+  }
+  to {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+  }
+}
+
+@keyframes scaleAnm {
+  from {
+    -webkit-transform: translateY(-100%) scaleY(0);
+            transform: translateY(-100%) scaleY(0);
+  }
+  to {
+    -webkit-transform: translateY(0) scaleY(1);
+            transform: translateY(0) scaleY(1);
+  }
+}
 .sec1 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
+  background-color: aqua;
 }
 
 .sec2 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
+  background-color: aquamarine;
 }
 
 .sec3 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
+  background-color: yellowgreen;
 }
 
 .sec4 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
+  background-color: plum;
 }
 
 .sec5 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
+  background-color: green;
 }
 
 .controls {
