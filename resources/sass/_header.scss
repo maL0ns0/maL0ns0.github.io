@@ -17,37 +17,12 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-color: var(--color-secondary);
-            //position: absolute;
-            //left: 0;
-            //top: 0;
-            transition: var(--transition-dflt);
+            transition: filter 0.5s ease-in-out;
             clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
             filter:grayscale(100%);
             &:hover{
-                filter:grayscale(1%);
+                filter:grayscale(0);
             }
-            /*
-            .imgCont{
-                border-radius: var(--br-sm-2);
-                height: 90%;
-                width:70%;
-                margin-left: 4rem;
-                background-color: var(--color-black);
-                transition: var(--transition-dflt);
-                img{
-                    width: 80%;
-                    height: 80%;
-                    object-fit: cover;
-                    transition: var(--transition-dflt);
-                    filter:grayscale(100%);
-                    &:hover{
-                        cursor: pointer;
-                        filter:grayscale(1%);
-                    }
-                }
-
-            }*/
-            
         }
     }
 
@@ -69,44 +44,4 @@
 .bttn-cntainer{
     display: flex;
     align-self: flex-start;
-}
-
-.bttn-main{
-    border-radius: 30px;
-    color: inherit;
-    font-weight: 600;
-    position: relative;
-    border: 1px solid var(--color-secondary);
-    display: flex;
-    align-self: flex-start;
-    align-items: center;
-    overflow: hidden;
-    .bttn-text{
-        padding: 0 2rem;
-    }
-    .bttn-icon{
-        background-color: var(--color-secondary);
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        border-radius: 50%;
-        padding: 1rem;
-    }
-    &::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateX(100%);
-        transition: all 0.5s ease-in-out;
-        z-index: -1;
-    }
-    &:hover{
-        &::before{
-            width: 100%;
-            height: 100%;
-            background-color: var(--color-secondary);
-            transform: translateX(0);
-        }
-    }
 }
