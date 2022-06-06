@@ -1,0 +1,77 @@
+/*portfolio seccion*/
+
+portfText{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.portfolios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    .portfolioItm{
+        position: relative;
+        img{
+            width: 100%;
+            height: 18.75rem;
+            object-fit: cover; 
+        }
+        .hoverItm{
+            width: 100%;
+            height: 100%;
+            background-color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 0.9375rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transform: scale(0);
+            transition: all 0.5s ease-in-out;
+            
+            h3{
+                font-size: 1.5rem;
+                color: var(--color-white);
+                margin-bottom: 1.5rem;
+            }
+            .icons{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon{
+                    background-color: var(--color-primary);
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 1rem;
+                    transition: background-color 0.5s ease-in-out;
+                    i{
+                        color: var(--color-white);
+                        font-size: 1.5rem;
+                        margin: 0 1rem;
+                    }
+
+                    &:hover{
+                        background-color: var(--color-white);
+                        i{
+                            color: var(--color-primary);
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover .hoverItm{
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+}
