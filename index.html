@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./resources/sass/style.css" rel="stylesheet">
     <script src="./resources/JS/app.js" defer></script>
     <title>Portaflio</title>
 </head>
+
 <body class="main-content">
-    <header class="section sec1 header active-sect" id="home">
+    <header class="section sec1 active-sect" id="home">
         <div class="header-content">
             <div class="left-hd">
                 <div class="hshape">
@@ -23,7 +29,9 @@
                 <h1 class="name">
                     Hello.<span> Im Maxwell Alexander Alonso Colmenero</span> a developer.
                 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam molestias sequi maxime perspiciatis asperiores qui laboriosam minima molestiae corrupti aperiam doloribus neque, id obcaecati natus praesentium nemo! Saepe, exercitationem voluptas?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam molestias sequi maxime perspiciatis
+                    asperiores qui laboriosam minima molestiae corrupti aperiam doloribus neque, id obcaecati natus
+                    praesentium nemo! Saepe, exercitationem voluptas?</p>
                 <div class="bttn-cntainer">
                     <a href="" class="bttn-main">
                         <span class="bttn-text">Get my C.V.</span>
@@ -33,199 +41,228 @@
             </div>
         </div>
     </header>
-        
-        <main>
-            <section class="section sec2 about" id="about">
-                <div class="main-title">
-                    <h2>About <span>me</span> <span class="bgText">my stats</span></h2>
+
+    <main>
+        <section class="section sec2" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span> <span class="bgText">my stats</span></h2>
+            </div>
+            <div class="aboutContainer">
+                <div class="aboutLeft">
+                    <h4>Information about me</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam asperiores esse delectus placeat. Reiciendis voluptas
+                        animi sunt porro tempora officiis odit itaque culpa voluptate quos illo,
+                        eveniet et deserunt sapiente.
+                    </p>
+                    <div class="bttn-cntainer">
+                        <a href="" class="bttn-main">
+                            <span class="bttn-text">Get my C.V.</span>
+                            <span class="bttn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                        </a>
+                    </div>
                 </div>
-                <div class="aboutContainer">
-                    <div class="aboutLeft">
-                        <h4>Information about me</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                           Quibusdam asperiores esse delectus placeat. Reiciendis voluptas 
-                           animi sunt porro tempora officiis odit itaque culpa voluptate quos illo, 
-                           eveniet et deserunt sapiente.
-                        </p>
-                        <div class="bttn-cntainer">
-                            <a href="" class="bttn-main">
-                                <span class="bttn-text">Get my C.V.</span>
-                                <span class="bttn-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                <div class="aboutRight">
+                    <div class="aboutItem">
+                        <div class="abText">
+                            <p class="lgText">560+</p>
+                            <p class="smText">Projects <br />Completed</p>
+                        </div>
+                    </div>
+                    <div class="aboutItem">
+                        <div class="abText">
+                            <p class="lgText">560+</p>
+                            <p class="smText">Projects <br />Completed</p>
+                        </div>
+                    </div>
+                    <div class="aboutItem">
+                        <div class="abText">
+                            <p class="lgText">560+</p>
+                            <p class="smText">Projects <br />Completed</p>
+                        </div>
+                    </div>
+                    <div class="aboutItem">
+                        <div class="abText">
+                            <p class="lgText">560+</p>
+                            <p class="smText">Projects <br />Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutStats">
+                <h4 class="staTitle">Skills</h4>
+                <div class="prgsBars">
+                    <div class="progBar">
+                        <p class="progTitle">English</p>
+                        <div class="progContr">
+                            <p class="progText">90%</p>
+                            <div class="progress">
+                                <span id="engBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progBar">
+                        <p class="progTitle">html5</p>
+                        <div class="progContr">
+                            <p class="progText">90%</p>
+                            <div class="progress">
+                                <span id="htmlBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progBar">
+                        <p class="progTitle">CSS3</p>
+                        <div class="progContr">
+                            <p class="progText">80%</p>
+                            <div class="progress">
+                                <span id="cssBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progBar">
+                        <p class="progTitle">Java Script</p>
+                        <div class="progContr">
+                            <p class="progText">80%</p>
+                            <div class="progress">
+                                <span id="jsBar"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="staTitle">My Time Line</h4>
+            <div class="timeLine">
+                <div class="timeLineItem">
+                    <div class="timeLineIcon">
+                        <i class="fa-solid fa-suitcase"></i>
+                    </div>
+                    <p class="tlDuration">2010 - present</p>
+                    <h5>Web developer <span>WWSoft</span></h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                </div>
+                <div class="timeLineItem">
+                    <div class="timeLineIcon">
+                        <i class="fa-solid fa-suitcase"></i>
+                    </div>
+                    <p class="tlDuration">2010 - present</p>
+                    <h5>Web developer <span>WWSoft</span></h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                </div>
+                <div class="timeLineItem">
+                    <div class="timeLineIcon">
+                        <i class="fa-solid fa-suitcase"></i>
+                    </div>
+                    <p class="tlDuration">2010 - present</p>
+                    <h5>Web developer <span>WWSoft</span></h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sec3" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span><span class="bgText">My work</span></h2>
+            </div>
+            <p class="portfText">
+                This is some of my work until now
+            </p>
+            <div class="portfolios">
+                <div class="portfolioItm">
+                    <figure class="image">
+                        <img src="./resources/img/portFolioImg.jpg" alt="project image">
+                    </figure>
+                    <div class="hoverItm">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="www.google.com" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
                             </a>
                         </div>
                     </div>
-                    <div class="aboutRight">
-                        <div class="aboutItem">
-                            <div class="abText">
-                                <p class="lgText">560+</p>
-                                <p class="smText">Projects <br/>Completed</p>
-                            </div>
-                        </div>
-                        <div class="aboutItem">
-                            <div class="abText">
-                                <p class="lgText">560+</p>
-                                <p class="smText">Projects <br/>Completed</p>
-                            </div>
-                        </div>
-                        <div class="aboutItem">
-                            <div class="abText">
-                                <p class="lgText">560+</p>
-                                <p class="smText">Projects <br/>Completed</p>
-                            </div>
-                        </div>
-                        <div class="aboutItem">
-                            <div class="abText">
-                                <p class="lgText">560+</p>
-                                <p class="smText">Projects <br/>Completed</p>
-                            </div>
+                </div>
+
+                <div class="portfolioItm">
+                    <figure class="image">
+                        <img src="./resources/img/portFolioImg.jpg" alt="project image">
+                    </figure>
+                    <div class="hoverItm">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="www.google.com" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="aboutStats">
-                    <h4 class="staTitle">Skills</h4>
-                    <div class="prgsBars">
-                        <div class="progBar">
-                            <p class="progTitle">English</p>
-                            <div class="progContr">
-                                <p class="progText">90%</p>
-                                <div class="progress">
-                                    <span id="engBar"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="progBar">
-                            <p class="progTitle">html5</p>
-                            <div class="progContr">
-                                <p class="progText">90%</p>
-                                <div class="progress">
-                                    <span id="htmlBar"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="progBar">
-                            <p class="progTitle">CSS3</p>
-                            <div class="progContr">
-                                <p class="progText">80%</p>
-                                <div class="progress">
-                                    <span id="cssBar"></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="progBar">
-                            <p class="progTitle">Java Script</p>
-                            <div class="progContr">
-                                <p class="progText">80%</p>
-                                <div class="progress">
-                                    <span id="jsBar"></span>
-                                </div>
-                            </div>
+
+                <div class="portfolioItm">
+                    <figure class="image">
+                        <img src="./resources/img/portFolioImg.jpg" alt="project image">
+                    </figure>
+                    <div class="hoverItm">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="www.google.com" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <h4 class="staTitle">My Time Line</h4>
-                <div class="timeLine">
-                    <div class="timeLineItem">
-                        <div class="timeLineIcon">
-                            <i class="fa-solid fa-suitcase"></i>
-                        </div>
-                        <p class="tlDuration">2010 - present</p>
-                        <h5>Web developer <span>WWSoft</span></h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
-                    </div>
-                    <div class="timeLineItem">
-                        <div class="timeLineIcon">
-                            <i class="fa-solid fa-suitcase"></i>
-                        </div>
-                        <p class="tlDuration">2010 - present</p>
-                        <h5>Web developer <span>WWSoft</span></h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
-                    </div>
-                    <div class="timeLineItem">
-                        <div class="timeLineIcon">
-                            <i class="fa-solid fa-suitcase"></i>
-                        </div>
-                        <p class="tlDuration">2010 - present</p>
-                        <h5>Web developer <span>WWSoft</span></h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing</p>
+            </div>
+            </div>
+        </section>
+
+        <section class="section sec4" id="blogs">
+            <div class="main-title">
+                <h2>My <span>Blogs</span><span class="bgText">My blogs</span></h2>
+            </div>
+            <div class="blogs">
+                <div class="blogItm">
+                    <img src="./resources/img/pocketBooks.png" alt="blog picture preview">
+                    <div class="blogText">
+                        <h4>How to ...</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-            </section>
-
-            <section class="section sec3 portfolio" id="portfolio">
-                <div class="main-title">
-                    <h2>My <span>Portfolio</span><span class="bgText">My work</span></h2>
-                    <p class="portfText">
-                        This is some of my work until now
-                    </p>
-                    <div class="portfolios">
-                        <div class="portfolioItm">
-                            <figure class="image">
-                                <img src="./resources/img/portFolioImg.jpg" alt="project image">
-                            </figure>
-                            <div class="hoverItm">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="www.google.com" target="_blank" class="icon">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolioItm">
-                            <figure class="image">
-                                <img src="./resources/img/portFolioImg.jpg" alt="project image">
-                            </figure>
-                            <div class="hoverItm">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="www.google.com" target="_blank" class="icon">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolioItm">
-                            <figure class="image">
-                                <img src="./resources/img/portFolioImg.jpg" alt="project image">
-                            </figure>
-                            <div class="hoverItm">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="www.google.com" target="_blank" class="icon">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                <div class="blogItm">
+                    <img src="./resources/img/pocketBooks.png" alt="blog picture preview">
+                    <div class="blogText">
+                        <h4>How to ...</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-            </section>
+                <div class="blogItm">
+                    <img src="./resources/img/pocketBooks.png" alt="blog picture preview">
+                    <div class="blogText">
+                        <h4>How to ...</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <section class="section sec4 blogs" id="blogs"></section>
+        <section class="section sec5 contact" id="contact"></section>
 
-            <section class="section sec5 contact" id="contact"></section>
+    </main>
 
-        </main>
-
-        <div class="controls">
-            <div class="control control-1 active-btn" data-id="home">
-                <i class="fa-solid fa-house"></i>
-            </div>
-            <div class="control control-2" data-id="about">
-                <i class="fa-solid fa-user"></i>
-            </div>
-            <div class="control control-3" data-id="portfolio">
-                <i class="fa-solid fa-suitcase"></i>
-            </div>
-            <div class="control control-4" data-id="blogs">
-                <i class="fa-solid fa-newspaper"></i>
-            </div>
-            <div class="control control-5" data-id="contact">
-                <i class="fa-solid fa-envelope"></i>
-            </div>
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="home">
+            <i class="fa-solid fa-house"></i>
         </div>
-    
+        <div class="control control-2" data-id="about">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="control control-3" data-id="portfolio">
+            <i class="fa-solid fa-suitcase"></i>
+        </div>
+        <div class="control control-4" data-id="blogs">
+            <i class="fa-solid fa-newspaper"></i>
+        </div>
+        <div class="control control-5" data-id="contact">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </div>
+
 </body>
+
 </html>
