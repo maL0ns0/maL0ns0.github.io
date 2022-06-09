@@ -52,6 +52,8 @@ body {
     background-color: var(--color-primary);
     font-family: $roboto;
     font-size: 1.1rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     color: var(--color-white);
     transition: var(--transition-dflt);
 }

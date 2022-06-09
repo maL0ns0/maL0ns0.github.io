@@ -51,6 +51,8 @@ body {
   background-color: var(--color-primary);
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
   color: var(--color-white);
   -webkit-transition: var(--transition-dflt);
   transition: var(--transition-dflt);
