@@ -242,6 +242,24 @@ section {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+@media (max-width: 39.9375em) {
+  .controls {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: auto;
+    bottom: 0;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: var(--color-grey-5);
+  }
+}
 .controls .control {
   padding: 1rem;
   cursor: pointer;
@@ -261,6 +279,11 @@ section {
   margin: 0.7rem 0;
   -webkit-box-shadow: var(--box-shadow-1);
           box-shadow: var(--box-shadow-1);
+}
+@media (max-width: 39.9375em) {
+  .controls .control {
+    margin: 0.3rem 0rem;
+  }
 }
 .controls .control i {
   font-size: 1.2rem;
@@ -314,6 +337,11 @@ section {
   grid-template-columns: repeat(2, 1fr);
   height: 100%;
 }
+@media (max-width: 39.9375em) {
+  .header-content {
+    grid-template-columns: 1fr;
+  }
+}
 .header-content .left-hd {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,6 +350,11 @@ section {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+@media (max-width: 39.9375em) {
+  .header-content .left-hd {
+    bottom: 3.9375rem;
+  }
 }
 .header-content .left-hd .hshape {
   width: 75%;
@@ -339,6 +372,15 @@ section {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
 }
+@media (max-width: 39.9375em) {
+  .header-content .left-hd .hshape {
+    width: 100%;
+    -webkit-clip-path: none;
+            clip-path: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
 .header-content .left-hd .hshape:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
@@ -355,6 +397,14 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   padding-right: 12rem;
+}
+@media (max-width: 39.9375em) {
+  .header-content .right-hd {
+    grid-row: 1;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .header-content .right-hd .name {
   font: 3rem;

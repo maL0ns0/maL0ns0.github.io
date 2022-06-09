@@ -3,12 +3,21 @@
 .header-content{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @include breakpoint-down('small'){
+        grid-template-columns: 1fr;
+    }
+    
+    
     height: 100%;
 
     .left-hd{
         display:flex;
         align-items: center;
         position: relative;
+        @include breakpoint-down('small'){
+            bottom: 3.9375rem;
+            
+        }
         
         .hshape{
             width: 75%;
@@ -19,6 +28,12 @@
             background-color: var(--color-secondary);
             transition: filter 0.5s ease-in-out;
             clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+            @include breakpoint-down('small'){
+                width: 100%;
+                clip-path: none;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
             filter:grayscale(100%);
             &:hover{
                 filter:grayscale(0);
@@ -31,6 +46,12 @@
         flex-direction: column;
         justify-content: center;
         padding-right: 12rem;
+        @include breakpoint-down('small'){
+            grid-row: 1;
+            padding: 0;
+            width: 90%;
+            margin: 0 auto;
+        }
         .name{
             font: 3rem;
             color:var(--color-secondary);
