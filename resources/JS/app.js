@@ -23,4 +23,15 @@ function pageTransition(){
     }
 }
 
+//cambio de tema
+function themeChanger(){
+    let themeBtn = document.querySelector('.themeBtn')
+    themeBtn.addEventListener('click', () => {
+        let element = document.body;
+        element.classList.toggle('lighTheme')
+    })
+}
+
+
 pageTransition()
+themeChanger()

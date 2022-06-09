@@ -15,7 +15,7 @@ html {
 
 :root {
   --color-primary: hsl(227, 26%, 13%);
-  --color-secondary: hsl(145, 63%, 42%);
+  --color-secondary: hsl(273, 65%, 48%);
   --color-white: hsl(0, 0%, 100%);
   --color-black: hsl(0, 0%, 0%);
   --color-grey0: hsl(0, 0%, 97%);
@@ -28,6 +28,20 @@ html {
   --br-sm-2: 14px;
   --transition-dflt: all .5s ease-in-out;
   --box-shadow-1:0 3px 15px rgba(0,0,0,0.2);
+}
+
+.lighTheme {
+  --color-primary: hsl(0, 0%, 97%);
+  --color-secondary: hsl(145, 63%, 42%);
+  --color-white: hsl(0, 0%, 1%);
+  --color-grey-5: hsl(225, 2%, 51%);
+  --color-grey-1: hsl(180, 1%, 24%);
+  --color-grey-2: hsl(214, 13%, 24%);
+  --color-grey-4: hsl(207, 14%, 57%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-grey0: hsl(0, 0%, 97%);
+  --color-grey-3: hsl(206, 10%, 47%);
+  --color-grey-6: hsl(200, 20%, 9%);
 }
 
 body {
@@ -204,6 +218,7 @@ section {
   font-size: 6.3rem;
 }
 
+/*Controls section*/
 .controls {
   position: fixed;
   z-index: 5;
@@ -256,6 +271,39 @@ section {
 }
 .controls .control.active-btn i {
   color: var(--color-white);
+}
+
+/*Theme Button*/
+.themeBtn {
+  position: fixed;
+  top: 5%;
+  right: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-grey-4);
+  -webkit-box-shadow: var(--box-shadow-1);
+          box-shadow: var(--box-shadow-1);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.themeBtn:active {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+.themeBtn i {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+  pointer-events: none;
 }
 
 /*Header Section*/
