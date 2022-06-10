@@ -8,6 +8,10 @@
 .portfolios{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    @include breakpoint-down('small'){
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
     gap: 2rem;
     margin-top: 3rem;
     .portfolioItm{

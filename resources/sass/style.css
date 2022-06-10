@@ -685,6 +685,12 @@ section {
   gap: 2rem;
   margin-top: 3rem;
 }
+@media (max-width: 39.9375em) {
+  .portfolios {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+}
 .portfolios .portfolioItm {
   position: relative;
 }
