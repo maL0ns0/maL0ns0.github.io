@@ -78,6 +78,9 @@ section {
     left: 0;
     top: 0;
     padding: 3rem 18rem;
+    @include breakpoint-down('small'){
+        padding: 2rem 2.5rem;
+    }
 }
 
 .section{

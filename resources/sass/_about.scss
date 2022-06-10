@@ -6,10 +6,20 @@
     grid-template-columns: repeat(2, 1fr);
     padding-top: 3.5rem;
     padding-bottom: 5rem;
+    
+    @include breakpoint-down('small'){
+        grid-template-columns: 1fr;
+    }
 
     .aboutRight {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        @include breakpoint-down('small'){
+            grid-template-columns: 1fr;
+            padding-top: 2.5rem;
+
+        }
+        
         grid-gap: 2rem;
 
         .aboutItem {
@@ -60,14 +70,25 @@
     .aboutLeft {
         padding-right: 5rem;
 
+        @include breakpoint-down('small'){
+            padding: 0;
+        }
+
         p {
             padding: 1rem;
             color: var(--color-grey-1);
+            @include breakpoint-down('small'){
+                text-align: justify;
+            }
         }
 
         h4 {
             font-size: 2rem;
             text-transform: uppercase;
+
+            @include breakpoint-down('small'){
+                text-align: center;
+            }
         }
     }
 }
@@ -77,6 +98,11 @@
     .prgsBars {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
+        @include breakpoint-down('small'){
+            grid-template-columns: 1fr;
+        }
+
         grid-gap: 2rem;
         .progBar{
             display: flex;
@@ -147,6 +173,12 @@
 .timeLine{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @include breakpoint-down('small'){
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+    
     grid-gap: 2rem;
     padding-top: 3rem;
     .timeLineItem{

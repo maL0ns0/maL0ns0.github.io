@@ -79,6 +79,11 @@ section {
   top: 0;
   padding: 3rem 18rem;
 }
+@media (max-width: 39.9375em) {
+  section {
+    padding: 2rem 2.5rem;
+  }
+}
 
 .section {
   -webkit-transform: translateY(-100%) scale(0);
@@ -429,10 +434,21 @@ section {
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 }
+@media (max-width: 39.9375em) {
+  .aboutContainer {
+    grid-template-columns: 1fr;
+  }
+}
 .aboutContainer .aboutRight {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+}
+@media (max-width: 39.9375em) {
+  .aboutContainer .aboutRight {
+    grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+  }
 }
 .aboutContainer .aboutRight .aboutItem {
   border: 1px solid var(--color-grey-5);
@@ -484,13 +500,28 @@ section {
 .aboutContainer .aboutLeft {
   padding-right: 5rem;
 }
+@media (max-width: 39.9375em) {
+  .aboutContainer .aboutLeft {
+    padding: 0;
+  }
+}
 .aboutContainer .aboutLeft p {
   padding: 1rem;
   color: var(--color-grey-1);
 }
+@media (max-width: 39.9375em) {
+  .aboutContainer .aboutLeft p {
+    text-align: justify;
+  }
+}
 .aboutContainer .aboutLeft h4 {
   font-size: 2rem;
   text-transform: uppercase;
+}
+@media (max-width: 39.9375em) {
+  .aboutContainer .aboutLeft h4 {
+    text-align: center;
+  }
 }
 
 .aboutStats {
@@ -500,6 +531,11 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+}
+@media (max-width: 39.9375em) {
+  .aboutStats .prgsBars {
+    grid-template-columns: 1fr;
+  }
 }
 .aboutStats .prgsBars .progBar {
   display: -webkit-box;
@@ -580,6 +616,12 @@ section {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   padding-top: 3rem;
+}
+@media (max-width: 39.9375em) {
+  .timeLine {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
 }
 .timeLine .timeLineItem {
   position: relative;
