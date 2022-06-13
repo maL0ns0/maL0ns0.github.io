@@ -1,24 +1,28 @@
 /*Header Section*/
 
-.header-content{
+.header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    @include breakpoint-down('small'){
+
+    @include breakpoint-down('medium') {
         grid-template-columns: 1fr;
     }
-    
-    
+
+
     height: 100%;
 
-    .left-hd{
-        display:flex;
+    .left-hd {
+        display: flex;
         align-items: center;
         position: relative;
-        @include breakpoint-down('small'){
+
+        @include breakpoint-down('medium') {
             bottom: 3.9375rem;
+            justify-content: center;
+            align-items: flex-start;
         }
-        
-        .hshape{
+
+        .hshape {
             width: 75%;
             height: 100%;
             background-image: url('../img/hero.png');
@@ -27,41 +31,71 @@
             background-color: var(--color-secondary);
             transition: filter 0.5s ease-in-out;
             clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
-            @include breakpoint-down('small'){
-                width: 100%;
+
+            @include breakpoint-down('medium') {
+                width: 22%;
+                height: 50%;
                 clip-path: none;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
+                border-radius: 50%;
             }
+
             filter:grayscale(100%);
-            &:hover{
-                filter:grayscale(0);
+
+            &:hover {
+                filter: grayscale(0);
             }
         }
     }
 
-    .right-hd{
+    .right-hd {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding-right: 12rem;
-        @include breakpoint-down('small'){
+
+        @include breakpoint-down('medium') {
             grid-row: 1;
             padding: 0;
             width: 90%;
             margin: 0 auto;
         }
-        .name{
+
+        .name {
             font: 3rem;
-            color:var(--color-secondary);
-            p{
+            color: var(--color-secondary);
+
+            p {
                 margin: 1.5rem 0;
             }
+
+            @include breakpoint-down('medium') {
+                text-align: center;
+            }
         }
+
+        @include breakpoint-down('medium') {
+            p {
+                text-align: justify;
+                padding: 0 1rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        @include breakpoint-down('small') {
+            p {
+                padding: 0;
+
+            }
+        }
+
     }
 }
 
-.bttn-cntainer{
+.bttn-cntainer {
     display: flex;
     align-self: flex-start;
+
+    @include breakpoint-down('medium') {
+        align-self: center;
+    }
 }

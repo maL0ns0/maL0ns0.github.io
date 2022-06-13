@@ -2,12 +2,21 @@
 .contactContentCtnr{
     padding-top: 3.5rem;
     display: flex;
+
+    @include breakpoint-down('medium'){
+        flex-direction: column;
+        padding-bottom: 6rem;
+    }
+    
     .leftContact{
         flex: 2;
         h4{
             margin-top: 1rem;
             font-size: 2rem;
             text-transform: uppercase;
+            @include breakpoint-down('medium'){
+                text-align: center;
+            }
         }
         p{
             margin: 1rem 0;
@@ -32,9 +41,24 @@
                 }
             }
         }
+
+        .scontactIcons{
+            @include breakpoint-down('medium'){
+                display: flex;
+                justify-content: center;
+            }
+        }
+        
         .scontactIcon{
             display: flex;
             margin-top: 2rem;
+            @include breakpoint-down('medium'){
+                margin-bottom: 2.1rem;
+            }
+            @include breakpoint-down('small'){
+                margin-bottom: 0;
+            }
+            
             a{
                 display: flex;
                 justify-items: center;
@@ -67,6 +91,9 @@
     .rightContact{
         flex: 3;
         margin-left: 3rem;
+        @include breakpoint-down('medium'){
+            margin-left: 0;
+        }
         .inpControl{
             margin: 1.5rem 0;
             input, textarea{
@@ -85,8 +112,19 @@
         }
         .ic-2{
             display: flex;
+            @include breakpoint-down('small'){
+                flex-direction: column;
+                margin-bottom: 0;
+                &>input{
+                    margin: 1.5rem 0 0 0;
+                }
+            }
             :last-child{
                 margin-left: 1.5rem;
+
+                @include breakpoint-down('small'){
+                    margin-left: 0;
+                }
             }
         }
         .submitBtn{

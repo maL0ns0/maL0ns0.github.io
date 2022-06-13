@@ -2,7 +2,7 @@
 .blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    @include breakpoint-down('small'){
+    @include breakpoint-down('medium'){
         grid-template-columns: 1fr;
         padding: 6rem 0;
     }

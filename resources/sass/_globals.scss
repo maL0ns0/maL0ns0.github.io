@@ -78,6 +78,10 @@ section {
     left: 0;
     top: 0;
     padding: 3rem 18rem;
+    @include breakpoint-down('medium'){
+        padding: 3rem 7.5rem;
+    }
+    
     @include breakpoint-down('small'){
         padding: 2rem 2.5rem;
     }
@@ -144,6 +148,10 @@ section {
     align-self: flex-start;
     align-items: center;
     overflow: hidden;
+    @include breakpoint-down('medium'){
+        margin: 0 auto;
+    }
+
     .bttn-text{
         padding: 0 2rem;
     }
@@ -181,10 +189,17 @@ section {
         position: relative;
         text-transform: uppercase;
         font-size: 4rem;
+        @include breakpoint-down('small'){
+            font-size: 2rem;
+        }
         font-weight: 700;
 
         span {
             color: var(--color-secondary);
+
+            @include breakpoint-down('small'){
+                font-size: 2.5rem;
+            }
         }
 
         .bgText {
@@ -196,6 +211,9 @@ section {
             transform: translate(-50%, -50%);
             font-weight: 800;
             font-size: 6.3rem;
+            @include breakpoint-down('small'){
+                font-size: 2.8rem;
+            }
         }
     }
 }

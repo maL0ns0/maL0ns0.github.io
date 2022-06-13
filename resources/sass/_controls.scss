@@ -10,7 +10,7 @@
     justify-content: center;
     transform: translateY(-50%);
 
-    @include breakpoint-down('small'){
+    @include breakpoint-down('medium'){
         flex-direction: row;
         top: auto;
         bottom: 0;
