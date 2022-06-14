@@ -97,7 +97,7 @@
         .inpControl{
             margin: 1.5rem 0;
             input, textarea{
-                border-radius: 1.875rem;
+                border-radius:1.875rem;
                 font-family: inherit;
                 font-weight: inherit;
                 font-style: inherit;
@@ -126,6 +126,11 @@
                     margin-left: 0;
                 }
             }
+        }
+        button{
+            background-color: transparent;
+            padding: 0;
+            margin: 0;
         }
         .submitBtn{
             display: flex;
