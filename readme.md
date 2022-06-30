@@ -9,3 +9,6 @@ If you want the code just download the project folder or clone the repository.
 + HTML5
 + SASS CSS3
 + JAVA SCRIPT
+
+### Note
+Next update i'm planning to style with tailwind css
